@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import AppBar from "./appbar";
+import {ThemeType} from "@/types/theme";
 
-const inter = Inter({ subsets: ["latin"] });
+const work_sans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Filum",
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={work_sans.className} data-theme={ThemeType.LIGHT}>
         <AppBar/>
         {children}
       </body>
