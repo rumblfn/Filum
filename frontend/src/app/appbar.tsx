@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { auth, signIn, signOut } from "@/auth";
+import { auth, signIn, signOut } from "@/utils/auth/auth";
 import { ThemeSwitcher } from "@/components/ui/themeSwitcher";
 
 import { Montserrat } from "next/font/google";
@@ -9,6 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 async function AppBar() {
   const session = await auth();
   const userData = session?.user;
+  console.log(session)
 
   return (
     <div className={`${montserrat.className} container mx-auto flex p-2 text-xl`}>

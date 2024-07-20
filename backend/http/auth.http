@@ -1,0 +1,27 @@
+### Register by user data.
+POST {{host}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Bob",
+  "email": "example@mail.ru",
+  "password": "example-pass"
+}
+
+### Test correct login by user data.
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "example@mail.ru",
+  "password": "example-pass"
+}
+
+### Test incorrect login by user data.
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "example@mail.ru",
+  "password": "pth-example"
+}

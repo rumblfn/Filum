@@ -61,20 +61,15 @@ export default function Home() {
           <section className="bg-muted py-12 md:py-20">
             <div className="container px-4 md:px-6">
               <h2 className="text-2xl font-bold mb-4">Convert Your Files</h2>
-              <div className="bg-background rounded-lg shadow-lg p-6 md:p-8">
-                <div>
-                  <div className="flex flex-col items-center justify-center space-y-4">
-                    <UploadIcon className="h-12 w-12 text-muted-foreground"/>
-                    <p className="text-lg font-medium">
-                      Drag and drop your files here or <button className="text-primary underline">browse</button>
-                    </p>
-                    <p className="text-muted-foreground text-sm">
-                      Supported formats: PDF, JPG, PNG, DOC, XLSX, MP3, MP4, ZIP
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-6 flex justify-end">
-                  <Button className="bg-primary text-primary-foreground">Convert</Button>
+              <div className="bg-background shadow-lg p-6 md:p-8">
+                <div className="flex flex-col items-center justify-center space-y-4">
+                  <UploadIcon className="h-12 w-12 text-muted-foreground"/>
+                  <p className="text-lg font-medium">
+                    Drag and drop your files here or <button className="text-primary underline">browse</button>
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    Supported formats: PDF, JPG, PNG, DOC, XLSX, MP3, MP4, ZIP
+                  </p>
                 </div>
               </div>
             </div>

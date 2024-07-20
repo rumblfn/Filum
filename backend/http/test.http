@@ -1,0 +1,2 @@
+### GET request to test working server
+GET {{host}}?generated-in=WebStorm
